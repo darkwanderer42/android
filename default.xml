@@ -18,17 +18,12 @@
            sync-c="true"
            sync-j="4" />
   
-  <remote name="opengapps" fetch="https://github.com/opengapps/" />
-
 
   <!-- AOSP Projects -->
 
   <project path="build" name="LineageOS/android_build" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
-  <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" />
-  <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
