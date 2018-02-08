@@ -17,6 +17,11 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
+  
+ < remote name="opengapps" fetch="https://github.com/opengapps/" />
+ < project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+ < project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+ < project path="vendor/opengapps/sources/arm" clone-depth="1" revision="master" remote="opengapps" />
 
   <!-- AOSP Projects -->
 
