@@ -19,9 +19,7 @@
            sync-j="4" />
   
  < remote name="opengapps" fetch="https://github.com/opengapps/" />
- < project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
- < project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
- < project path="vendor/opengapps/sources/arm" clone-depth="1" revision="master" remote="opengapps" />
+
 
   <!-- AOSP Projects -->
 
@@ -34,6 +32,9 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/arm" clone-depth="1" revision="master" remote="opengapps" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
   <project path="art" name="LineageOS/android_art" groups="pdk" />
   <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
